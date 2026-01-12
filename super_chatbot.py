@@ -28,7 +28,7 @@ model = genai.GenerativeModel('gemini-2.5-flash')
 
 # --- UI HEADER ---
 st.title(" PlugTrail Assistant")
-st.caption("Powered by Gemini 2.5 • Vision & Text Support")
+st.caption("Ask your doubts regarding charging")
 
 # --- SESSION STATE ---
 if "messages" not in st.session_state:
@@ -142,4 +142,5 @@ Your goal is to answer user queries about PlugTrail's services, chargers, and bu
                 })
 
             except Exception as e:
+
                 st.error(f"Error: {e}")
